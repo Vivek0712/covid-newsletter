@@ -11,7 +11,7 @@ def main(mytimer: func.TimerRequest, sendGridMessage: func.Out[str]) -> None:
     # if mytimer.past_due:
         logging.info('The timer is past due!')
         
-        table_service = TableService(account_name='storageaccountfuncab8ff', account_key='E8BmaXqBZaMLxe61VcO1QdoTd4bdpx1j/NphPZvfqwMyV2nW2DMmEFrcfNJ6kdUCjYC3d6yd4b3k9UxP5tcxBQ==')
+        table_service = TableService(account_name='', account_key='')
 
         rows = table_service.query_entities("mailinglist","PartitionKey eq '1'")
         maillist = []
