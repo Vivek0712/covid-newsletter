@@ -22,7 +22,7 @@
         if (check == true) {
             $.ajax
 			({ 
-				url: 'https://covidmaillist.azurewebsites.net/api/HttpTrigger?action=subscribe&email='+$(email).val(),
+				url: 'https://<?>.azurewebsites.net/api/HttpTrigger?action=subscribe&email='+$(email).val(),
 				type: 'get',
 				success: function(result)
 				{
@@ -48,7 +48,7 @@
         if (check == true) {
             $.ajax
 			({ 
-				url: 'https://covidmaillist.azurewebsites.net/api/HttpTrigger?action=unsubscribe&email='+$(email).val(),
+				url: 'https://<?>.azurewebsites.net/api/HttpTrigger?action=unsubscribe&email='+$(email).val(),
 				type: 'get',
 				success: function(result)
 				{
