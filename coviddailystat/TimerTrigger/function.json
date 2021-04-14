@@ -1,0 +1,21 @@
+{
+  "scriptFile": "__init__.py",
+  "version": "2.0",
+  
+  "bindings": [
+    {
+      "name": "mytimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 30 12 * * *"
+    },
+    {
+      "type": "sendGrid",
+      "name": "sendGridMessage",
+      "direction": "out",
+      "apiKey": "sendgrid_api",
+      "from": "vivekraja98@gmail.com"
+    }
+  ],
+  "disabled": false
+}
